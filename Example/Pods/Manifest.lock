@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (5.13.3):
+    - SDWebImage/Core (= 5.13.3)
+  - SDWebImage/Core (5.13.3)
+  - TCCycleScrollView (0.0.1):
+    - Masonry
+    - SDWebImage
+
+DEPENDENCIES:
+  - TCCycleScrollView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  TCCycleScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: af5bbffef2cde09f148d826f9733dcde1a9414cd
+  TCCycleScrollView: 3382df57428df47b93532f42214e190d5c79bf11
+
+PODFILE CHECKSUM: bbaa4b0191f743118b0a447dc3c2b5366a03c130
+
+COCOAPODS: 1.11.3
