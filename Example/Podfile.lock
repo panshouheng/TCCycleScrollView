@@ -3,7 +3,7 @@ PODS:
   - SDWebImage (5.13.3):
     - SDWebImage/Core (= 5.13.3)
   - SDWebImage/Core (5.13.3)
-  - TCCycleScrollView (0.0.1):
+  - TCCycleScrollView (0.0.3):
     - Masonry
     - SDWebImage
 
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: af5bbffef2cde09f148d826f9733dcde1a9414cd
-  TCCycleScrollView: 3382df57428df47b93532f42214e190d5c79bf11
+  TCCycleScrollView: ea8e2ba7b98819f7eb73d2a924c1466384c606a5
 
 PODFILE CHECKSUM: bbaa4b0191f743118b0a447dc3c2b5366a03c130
 

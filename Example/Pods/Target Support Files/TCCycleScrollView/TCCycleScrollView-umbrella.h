@@ -13,6 +13,7 @@
 #import "TCCycleCell.h"
 #import "TCCycleScrollView.h"
 #import "TCPageControl.h"
+#import "TCPageControlProtocol.h"
 
 FOUNDATION_EXPORT double TCCycleScrollViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char TCCycleScrollViewVersionString[];
