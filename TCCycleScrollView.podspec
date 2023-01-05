@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCCycleScrollView'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = '轮播组件'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-轮播组件，方便开发
+  仿照SDCycleScrollView进行更改的轮播图，可自定义PageControl
                        DESC
 
   s.homepage         = 'https://github.com/panshouheng/TCCycleScrollView'

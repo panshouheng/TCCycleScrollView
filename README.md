@@ -23,7 +23,7 @@ pod 'TCCycleScrollView'
 
 ## Author
 
-panshouheng, shouheng.pan@tineco.com
+panshouheng, 350621987@qq.com
 
 ## License
 
