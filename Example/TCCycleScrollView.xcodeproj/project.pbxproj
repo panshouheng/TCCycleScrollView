@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5142071A2966827C0013B20B /* TCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 514207192966827C0013B20B /* TCCustomCell.m */; };
+		5142071D2966A0C70013B20B /* TCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142071C2966A0C70013B20B /* TCTableViewCell.m */; };
+		514207202966A12A0013B20B /* TCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142071F2966A12A0013B20B /* TCTableViewController.m */; };
 		51E88F8A2965811500500EAB /* TCRecoCyclePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E88F892965811500500EAB /* TCRecoCyclePageControl.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -43,6 +46,12 @@
 		286F6A2BF30852A44052A107 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3CEDDA448833ECDA67A33461 /* Pods-TCCycleScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCCycleScrollView_Tests.release.xcconfig"; path = "Target Support Files/Pods-TCCycleScrollView_Tests/Pods-TCCycleScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		457C7B5A54509170E6B80B22 /* Pods-TCCycleScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCCycleScrollView_Example.release.xcconfig"; path = "Target Support Files/Pods-TCCycleScrollView_Example/Pods-TCCycleScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		514207182966827C0013B20B /* TCCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCustomCell.h; sourceTree = "<group>"; };
+		514207192966827C0013B20B /* TCCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCustomCell.m; sourceTree = "<group>"; };
+		5142071B2966A0C70013B20B /* TCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTableViewCell.h; sourceTree = "<group>"; };
+		5142071C2966A0C70013B20B /* TCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTableViewCell.m; sourceTree = "<group>"; };
+		5142071E2966A12A0013B20B /* TCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTableViewController.h; sourceTree = "<group>"; };
+		5142071F2966A12A0013B20B /* TCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTableViewController.m; sourceTree = "<group>"; };
 		51E88F882965811500500EAB /* TCRecoCyclePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRecoCyclePageControl.h; sourceTree = "<group>"; };
 		51E88F892965811500500EAB /* TCRecoCyclePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRecoCyclePageControl.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TCCycleScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCycleScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,8 +160,14 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TCViewController.h */,
 				6003F5A6195388D20070C39A /* TCViewController.m */,
+				5142071B2966A0C70013B20B /* TCTableViewCell.h */,
+				5142071C2966A0C70013B20B /* TCTableViewCell.m */,
+				514207182966827C0013B20B /* TCCustomCell.h */,
+				514207192966827C0013B20B /* TCCustomCell.m */,
 				51E88F882965811500500EAB /* TCRecoCyclePageControl.h */,
 				51E88F892965811500500EAB /* TCRecoCyclePageControl.m */,
+				5142071E2966A12A0013B20B /* TCTableViewController.h */,
+				5142071F2966A12A0013B20B /* TCTableViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -374,9 +389,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TCAppDelegate.m in Sources */,
+				514207202966A12A0013B20B /* TCTableViewController.m in Sources */,
 				51E88F8A2965811500500EAB /* TCRecoCyclePageControl.m in Sources */,
+				5142071D2966A0C70013B20B /* TCTableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* TCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5142071A2966827C0013B20B /* TCCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
