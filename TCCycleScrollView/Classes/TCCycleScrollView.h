@@ -47,8 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIViewContentMode bannerImageViewContentMode;
 
 @property (nonatomic, weak) id<TCCycleScrollViewDelegate> delegate;
-/// 是否需要显示PageControl
-@property (nonatomic, assign)BOOL needPageControl;
+
 
 + (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<TCCycleScrollViewDelegate>)delegate placeholderImage:(UIImage * _Nullable)placeholderImage;
 
@@ -58,7 +57,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 解决viewWillAppear时出现时轮播图卡在一半的问题，在控制器viewWillAppear时调用此方法 */
 - (void)adjustWhenControllerViewWillAppera;
 
-
+ //  配置pageControl 相关
+/// 是否需要显示PageControl 默认显示
+@property (nonatomic, assign)BOOL needPageControl;
 /** 默认PageControl 配置相应图片，如果自定义pageControl需要也可以进行设置*/
 @property (nonatomic, strong)UIImage *pageControlHighImage;
 @property (nonatomic, strong)UIImage *pageControlNormalImage;
@@ -69,6 +70,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)pageControlBottom:(CGFloat)bottom;
 - (void)pageControlCenterX;
 - (void)pageControlSize:(CGSize)size;
+
+/// 是否显示遮罩
+@property (nonatomic ,assign)BOOL showBannerMask;
+/// 遮罩的高度
+@property (nonatomic ,assign)CGFloat maskHeight;
+
+- (void)setMaskStartColor:(UIColor *)start endColor:(UIColor *)end;
+
 @end
 
 NS_ASSUME_NONNULL_END

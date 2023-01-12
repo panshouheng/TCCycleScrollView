@@ -40,6 +40,10 @@ NSString *const cycleCellIdenfiterID = @"cycleCellIdenfiterID";
 @property MASConstraint * pageControlSizeConstraint;
 @property MASConstraint * pageControlCenterXConstraint;
 
+@property (nonatomic ,strong)CAGradientLayer *gradient;
+@property (nonatomic, strong)UIColor *maskStartColor;
+@property (nonatomic, strong)UIColor *maskEndColor;
+
 @end
 
 @implementation TCCycleScrollView
@@ -80,8 +84,54 @@ NSString *const cycleCellIdenfiterID = @"cycleCellIdenfiterID";
         collectionView.backgroundColor = UIColor.clearColor;
         [self addSubview:collectionView];
         _collectionView = collectionView;
+        
+        
+        
     }
     return self;
+}
+- (UIColor *)maskStartColor {
+    if(!_maskStartColor) {
+        _maskStartColor = [[UIColor blackColor] colorWithAlphaComponent:1];
+    };
+    return _maskStartColor;
+}
+- (UIColor *)maskEndColor {
+    if(!_maskEndColor) {
+        _maskEndColor = [[UIColor blackColor] colorWithAlphaComponent:0];
+    }
+    return _maskEndColor;
+}
+- (void)setMaskHeight:(CGFloat)maskHeight {
+    _maskHeight = maskHeight;
+    self.gradient.frame = CGRectMake(0, 0, self.bounds.size.width, self.maskHeight);
+}
+- (CAGradientLayer *)gradient {
+    if(!_gradient) {
+        //渐变设置
+        _gradient = [CAGradientLayer layer];
+        //设置开始和结束位置(通过开始和结束位置来控制渐变的方向)
+        _gradient.startPoint = CGPointMake(0, 0);
+        _gradient.endPoint = CGPointMake(0, 1);
+        _gradient.colors = [NSArray arrayWithObjects:(id)self.maskStartColor.CGColor, (id)self.maskEndColor.CGColor, nil];
+        _gradient.locations = @[@(0.0),@(1.0f)];
+        _gradient.frame = CGRectMake(0, 0, self.bounds.size.width, self.maskHeight>0 ? self.maskHeight:self.bounds.size.height);
+        [self.layer addSublayer:_gradient];
+    }
+    return _gradient;
+}
+- (void)setMaskStartColor:(UIColor *)start endColor:(UIColor *)end {
+    self.maskStartColor = start;
+    self.maskEndColor = end;
+    self.gradient.colors =  [NSArray arrayWithObjects:(id)self.maskStartColor.CGColor, (id)self.maskEndColor.CGColor, nil];
+}
+- (void)setShowBannerMask:(BOOL)showBannerMask {
+    _showBannerMask = showBannerMask;
+    if(showBannerMask) {
+        self.gradient.hidden = NO;
+    } else {
+        _gradient.hidden = YES;
+    }
 }
 - (void)setNeedPageControl:(BOOL)needPageControl {
     _needPageControl = needPageControl;
