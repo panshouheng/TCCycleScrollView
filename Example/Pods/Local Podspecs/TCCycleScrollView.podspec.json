@@ -1,8 +1,8 @@
 {
   "name": "TCCycleScrollView",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "轮播组件",
-  "description": "轮播组件，方便开发",
+  "description": "仿照SDCycleScrollView进行更改的轮播图，可自定义PageControl",
   "homepage": "https://github.com/panshouheng/TCCycleScrollView",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/panshouheng/TCCycleScrollView.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "11.0"
